@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+
+  header {
+    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 10px;
+    font-size: calc(10px + 2vmin);
+
+    .App-logo {
+      height: 40px;
+      pointer-events: none;
+    }
+  }
+
+  main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    .coin {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border: 1px solid rgb(15, 15, 15);
+      background-color: #16191d;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 10px;
+      padding: 10px;
+
+      .coin_logo {
+        height: 200px;
+        width: 200px;
+      }
+
+      .name {
+        padding: 10px 0 5px 0;
+      }
+    }
+
+    .coin:hover {
+      background-color: #00000061;
+    }
+
+    .coin:hover {
+      -webkit-transform: scale(1.02); /* Safari and Chrome */
+      -moz-transform: scale(1.02); /* Firefox */
+      -ms-transform: scale(1.02); /* IE 9 */
+      -o-transform: scale(1.02); /* Opera */
+      transform: scale(1.02);
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > * {
+  margin-top: 10px;
+}
+
+label > input {
+  margin-left: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
